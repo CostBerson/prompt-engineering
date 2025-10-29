@@ -90,7 +90,7 @@ Start your response immediately with the analysis.
                 const num = index + 1;
                 // Click handler calls the modal function
                 html += `
-                    <div class="prompt-list-item p-4 mb-3 border border-gray-200 rounded-lg shadow-sm bg-white" 
+                    <div class="prompt-list-item p-4 mb-3 border    border-gray-200 rounded-lg shadow-sm bg-white" 
                          onclick="showPromptModal(${num})">
                         <h3 class="text-xl font-semibold text-blue-600 transition-colors">
                             ${data.title}
