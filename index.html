@@ -108,7 +108,7 @@
                     <input
                         type="text"
                         id="prompt-search-number"
-                        placeholder="Enter Prompt Number (1-6), Title, or Keyword"
+                        placeholder="Enter Prompt Number , Title, or Keyword"
                         class="w-full p-3 border-2 border-indigo-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-xl shadow-inner"
                         oninput="handleQuickViewInput()"
                     />
@@ -324,7 +324,7 @@ Start your response immediately with the analysis.
             // --- 1. Attempt Quick View by Number or Exact Title Match ---
             const num = parseInt(query);
             
-            // Check if the query is a number (1-6)
+            // Check if the query is a number 
             if (!isNaN(num) && num >= 1 && num <= promptData.length) {
                 foundIndex = num - 1;
                 foundPrompt = promptData[foundIndex];
@@ -365,7 +365,7 @@ Start your response immediately with the analysis.
 
         /**
          * Extracts editable placeholders and generates separate input HTML for them.
-         * @param {number} num - The prompt number (1-6).
+         * @param {number} num - The prompt number .
          * @returns {{inputHtml: string, displayPrompt: string, editableFieldsCount: number}}
          */
         function preparePromptForModal(num) {
@@ -415,7 +415,7 @@ Start your response immediately with the analysis.
          * Updates the currentPromptText (display) and currentCleanText (copy) globally 
          * by reconstructing the entire prompt from the original templates and current input values.
          * Also updates the live preview in the code block.
-         * @param {number} num - The prompt number (1-6).
+         * @param {number} num - The prompt number .
          */
         function updateEditablePrompt(num) {
             const data = promptData[num - 1];
