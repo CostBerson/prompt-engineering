@@ -1,0 +1,36 @@
+/* Custom styles for the responsive button hover effect */
+        .copy-button {
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .copy-button:hover {
+            background-color: #ef4444; /* Tailwind red-500 on hover */
+        }
+        .copy-button:active {
+            transform: scale(0.98);
+        }
+        /* Style for pre-formatted code block */
+        .prompt-code-display {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: monospace;
+        }
+        /* Custom scrollbar for better visual appeal */
+        .scrollable-card::-webkit-scrollbar {
+            width: 8px;
+        }
+        .scrollable-card::-webkit-scrollbar-thumb {
+            background: #9ca3af; /* gray-400 */
+            border-radius: 4px;
+        }
+        .scrollable-card::-webkit-scrollbar-thumb:hover {
+            background: #6b7280; /* gray-500 */
+        }
+        .prompt-list-item:hover {
+            cursor: pointer;
+            background-color: #f3f4f6; /* hover effect for list items */
+            border-color: #3b82f6;
+        }
+        /* The body must have a height greater than 100vh for overflow-hidden to work */
+        html, body {
+            height: 100%;
+        }
