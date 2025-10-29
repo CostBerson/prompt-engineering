@@ -583,6 +583,8 @@ Start your response immediately with the analysis.
             originalText = buttonElement.textContent;
             
             const textToPaste = currentCleanText; 
+            // The HTML to display the green checkmark and 'Copied!'
+            const copiedHtml = '<span class="text-green-400 mr-2">✔</span>Copied!';
 
             const textarea = document.createElement('textarea');
             textarea.value = textToPaste;
@@ -609,7 +611,8 @@ Start your response immediately with the analysis.
                         }, 2000);
                     }
                     
-                    buttonElement.textContent = 'Copied!';
+                    // Update button content with the icon
+                    buttonElement.innerHTML = copiedHtml;
                     
                     setTimeout(() => {
                         buttonElement.textContent = originalText;
